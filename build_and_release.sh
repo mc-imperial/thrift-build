@@ -19,7 +19,7 @@ cd x86_64-w64-mingw32-out
 cd ..
 
 cp linux-out/install/bin/thrift build-release/Linux/thrift
-cp x86_64-w64-mingw32-out/install/bin/thrift build-release/Windows/thrift
+cp x86_64-w64-mingw32-out/install/bin/thrift.exe build-release/Windows/thrift.exe
 cd build-release
 zip -r ../thrift.zip *
 cd ..
