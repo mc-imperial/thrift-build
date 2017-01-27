@@ -4,6 +4,7 @@ RUN \
   apt-get update && \
   apt-get -y install \
     automake bison cmake flex g++ git libevent-dev libssl-dev libtool make pkg-config \
+    x86_64-w64-mingw32-gcc \
     git golang wget zip && \
   apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
