@@ -3,7 +3,8 @@ set -x
 set -e
 set -u
 
-mkdir temp
+
+mkdir -p temp
 cd temp
 cmake -G "Unix Makefiles" ../../thrift-*/ -DCMAKE_BUILD_TYPE=Release -DBUILD_COMPILER=ON -DBUILD_LIBRARIES=OFF -DBUILD_TESTING=OFF -DBUILD_EXAMPLES=OFF 
 cmake --build . --config Release
